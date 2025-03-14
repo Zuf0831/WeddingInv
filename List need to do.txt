@@ -1,0 +1,25 @@
+List need to do : 
+
+
+- Param Link
+- Language Page( Background and CSS)
+- First Loading Page (Need to Edit)
+- Auto Input Name
+- Conditional For Sheet Input
+- RSVP (Need to edit a bit more)
+- RSVP Submit ErrorHandler  (Condition)
+- Text Animation (to make more POWERFULL!!!)
+- Card Info (can be more good)
+
+
+- HOME PAGE ENG Version
+
+
+(If Have Web Hosting URL)
+- Change page url for Discus page (RSVP Section)
+
+
+
+(Optional)
+- Get Param from Sheet
+- Effect for website (Sakura / Snow) -- High Risk (Depends on users Device)

@@ -10,19 +10,19 @@
         document.addEventListener('DOMContentLoaded', function() 
         {
             const selectedLanguage = localStorage.getItem('selectedLanguage');
-            const loadingMessage = selectedLanguage === 'id' ? 'Mohon Tunggu' : 'Loading';
+            const loadingMessage = selectedLanguage === 'id' ? 'Mohon Tunggu..' : 'Loading..';
 
             document.getElementById('loading-message').innerText = loadingMessage;
 
             if (selectedLanguage=='id'){
                 setTimeout(function() {
                     window.location.href = 'homeID.html';
-                }, 1000);
+                }, 900);
             }
             else {
                 setTimeout(function() {
                     window.location.href = 'homeEN.html';
-                }, 1000);
+                }, 900);
             }
         });
     </script>
