@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Wedding Website V1</title>
+        <title>Pre-Invitation</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         
         <!-- Google Fonts  -->
@@ -20,26 +20,531 @@
         <script src="../script/js/simplyCountdown.umd.js"></script>
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="../css/edit/homeEN.css">
+        <link rel="stylesheet" href="../css/edit/homeEN.css"> 
     </head>
     <body>
         <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
             <main>
-                <h4> Dear Mr./Mrs./Ms., </h4>
-                <h1> Indah & Deni</h1>
-                <p>Will be holding their wedding reception in: </p>
-    
-                <!-- Countdown function -->
-                <div class="simply-countdown-dark simply-countdown-circle"></div>
-                <a href="#undangan" class="btn btn-lg mt-4">Open Invitation</a>
+                <div class="inv">
+                    <!-- <h4> Kepada Bapak/Ibu/Saudara/i, </h4> -->
+                    <h1> Save The Date </h1>
+                    <p>Saturday, 02 August 2025</p>
+        
+                    <!-- Countdown function -->
+                    <div class="simply-countdown-dark simply-countdown-circle"></div>
+                    <a href="#family" class="btn btn-lg mt-4" onClick="enableScroll()">Open Pre-Invitation</a>
+                </div>
+                
             </main>
         </section>
 
 
+        <!-- OFFCANVAS NAVBAR -->
+        <nav class="navbar navbar-expand-md bg-transparent sticky-top navbarcanvas">
+            <div class="container">
+              <a class="navbar-brand" href="#">G boot</a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">G boot</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#family">Home</a>
+                    <a class="nav-link" href="#detail">Details</a>
+                    <a class="nav-link" href="#home">Profile</a>
+                    <a class="nav-link" href="#story">Story</a>
+                    <a class="nav-link" href="#rsvp">RSVP</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+        <!-- family section -->
+        <section id="family" class="family">
+            <div class="big-wrapper light">
+                <img src="../asset/img/shape.png" alt="" class="shape" />
+        
+                <header>
+                  <div class="container">
+                    <div class="test">
+                      <h3>Dear Family</h3>
+                    </div>
+        
+        
+                    <div class="overlay"></div>
+                  </div>
+                </header>
+        
+                <div class="showcase-area">
+                  <div class="container">
+                    <div class="left">
+                      <div class="big-title">
+                        <h1>Future is here,</h1>
+                        <h1>Start Exploring now.</h1>
+                      </div>
+                      <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Delectus eius distinctio odit, magni magnam qui ex perferendis
+                        vitae!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga vel nam corrupti laborum? Ratione, deleniti?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatem repellendus magnam.
+                      </p>
+                      <div class="cta">
+                        <a href="#detail" class="btn">Get started</a>
+                      </div>
+                    </div>
+        
+                    <div class="right">
+                      <img src="../asset/img/photos/SLM09490.JPG" alt="famphot" class="famphot" />
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="bottom-area">
+                  <div class="container">
+                    <button class="toggle-btn">
+                      <i class="far fa-moon"></i>
+                      <i class="far fa-sun"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+
+        <!-- Detail Section-->
+        <section id="detail" class="detail">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                        <span>Lorem ipsum dolor sit.</span>
+                        <h2>Wedding Details</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eius max
+                            ime laudantium corporis rem veritatis.</p>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-padding">
+                                        <h3>Lorem ipsum dolor sit.</h3>
+                                        <span>20 Jan 2025</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, voluptatem!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-padding">
+                                        <h3>Lorem ipsum dolor sit.</h3>
+                                        <span>20 Jan 2025</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur dolorem nam blanditiis, eos quam!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image" style="background-image: url(https://picsum.photos/303/303);"></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-padding">
+                                        <h3>Lorem ipsum dolor sit.</h3>
+                                        <span>20 Jan 2025</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur dolorem nam blanditiis, eos quam!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image" style="background-image: url(https://picsum.photos/306/306);"></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-padding">
+                                        <h3>Lorem ipsum dolor sit.</h3>
+                                        <span>20 Jan 2025</span>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur dolorem nam blanditiis, eos quam!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                    <h2>
+                        Location
+                    </h2>
+                    <p class="alamat">
+                        Gedung Serba Guna UPN "Veteran" Yogyakarta <br> Jl. Ring Road Utara No.104,
+                        Ngropoh, Condongcatur, Kec. Depok, 
+                        Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                    </p>
+                    <a href="https://maps.app.goo.gl/qeHpoJXq6Je7oawx8" target="_blank" class="btn btn-light mb-2">Open Map</a>
+                    <p class="description"> Expected to arrive at the informed location.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                <h2>Our Profile</h2>
+                <!-- <h3>Diseleggarakan pada 2 Agustus 2025 </h3>
+                <h5>di Daerah Istimewa Yogyakarta </h5>
+                <p>
+                    Oleh karena itu, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu kepada kami.
+                </p> -->
+    
+                </div>
+            </div>
+    
+            <div class="row couple">
+                <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-8 text-end">
+                    <h3>Indah</h3>
+                    <div class="border">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, obcaecati. Nihil dicta nam omnis ducimus tempora deleniti, 
+                            fugiat animi sequi incidunt error, labore, quidem dolore. Quibusdam, consequatur error? Suscipit, iusto!
+                        </p>
+                        <div class="medsos">
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        </div>
+                    </div>
+                    <p>Putri dari Bpk. Lorem <br> dan <br> Ibu ipsum</p>
+                    </div>
+                    <div class="col-4 px-4">
+                    <img src="../asset/img/test4.jpeg" alt="Indah" class="image">
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-4 px-4">
+                    <img src="../asset/img/test3.jpeg" alt="Deni" class="image">
+                    </div>
+                    <div class="col-8 ">
+                    <h3>Deni</h3>
+                    <div class="border">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, obcaecati. Nihil dicta nam omnis ducimus tempora deleniti, 
+                            fugiat animi sequi incidunt error, labore, quidem dolore. Quibusdam, consequatur error? Suscipit, iusto!
+                        </p>
+                        <div class="medsos">
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        </div>
+                    </div>
+                    <p>Putra dari Bpk. Lorem <br> dan <br> Ibu ipsum</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section id="info" class="info">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                <h2>
+                    Informasi Acara
+                </h2>
+                <p class="alamat">
+                    Alamat : Gedung Serba Guna UPN "Veteran" Yogyakarta <br> Jl. Ring Road Utara No.104,
+                    Ngropoh, Condongcatur, Kec. Depok, 
+                    Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                </p>
+                <a href="https://maps.app.goo.gl/qeHpoJXq6Je7oawx8" target="_blank" class="btn btn-light mb-2">Buka Peta</a>
+                <p class="description"> Diharapkan untuk datang ke lokasi yang telah diinformasikan</p>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-5 col-10">
+                <div class="card text-center text-bg-light mb-4">
+                    <div class="card-header">
+                    Resepsi Pernikahan
+                    </div>
+                    <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                        <i class="bi bi-alarm d-block"></i>
+                        <span>08.00 - 10.00</span>
+                        </div>
+                        <div class="col-md-6">
+                        <i class="bi bi-calendar3 d-block"></i>
+                        <span>Sabtu, 2 Agustus 2025</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                    Diharapkan untuk datang tepat waktu dan berpakaian rapi
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-5 col-10">
+                <div class="card text-center text-bg-light">
+                    <div class="card-header">
+                    Wedding Party
+                    </div>
+                    <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                        <i class="bi bi-alarm d-block"></i>
+                        <span>11.00 - 13.00</span>
+                        </div>
+                        <div class="col-md-6">
+                        <i class="bi bi-calendar3 d-block"></i>
+                        <span>Sabtu, 2 Agustus 2025</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                    Diharapkan untuk datang tepat waktu dan berpakaian rapi
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                        <span>Memori Kisah</span>
+                        <h2>Galeri Foto</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, amet.</p>
+                    </div>
+                </div>
+                <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/1.jpeg" data-toggle="lightbox" data-caption="Gallery 1" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/1.jpeg" alt="Gallery 1" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/5.jpeg" data-toggle="lightbox" data-caption="Gallery 2" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/5.jpeg" alt="Gallery 2" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/6.jpeg" data-toggle="lightbox" data-caption="Gallery 3" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/6.jpeg" alt="Gallery 3" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/8.jpeg" data-toggle="lightbox" data-caption="Gallery 4" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/8.jpeg" alt="Gallery 4" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/7.jpeg" data-toggle="lightbox" data-caption="Gallery 5" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/7.jpeg" alt="Gallery 5" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                    <div class="col mt-3">
+                        <a href="../asset/img/gallery/2.jpeg" data-toggle="lightbox" data-caption="Gallery 6" data-gallery="datagallery">
+                            <img src="../asset/img/gallery/2.jpeg" alt="Gallery 6" class="img-fluid w-100 rounded">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="rsvp">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10 text-center">
+                        <h2>Attendace Confirmation</h2>
+                        <p>Please Fill Form Below</p>
+                    </div>
+                </div>
+
+                <div class="row mx-0 justify-content-center">
+                    <div class="col-md-7 col-lg-5 px-lg-2 col-xl-4 px-xl-0 px-xxl-3">
+                      <form
+                        method="POST"
+                        class="w-100 rounded-1 p-4 border"
+                        action="https://script.google.com/macros/s/AKfycbzna9TBO0BU24v5jEAS1POgt5_WX7vJ6QnEgqwMeg74-bO5HTZyLXw2u8SAJje-75vK/exec" id="my-form">
+
+                        <div class="attend-but text-center mb-3">
+                            <button type="button" id="btn-present" class="btn btn-outline-success">
+                                <i class="bi bi-check-circle me-2"></i> Present</button>
+                            <button type="button" id="btn-absent" class="btn btn-outline-danger">
+                                <i class="bi bi-x-circle me-2"></i>Absent</button>
+                        </div>
+
+                        <div id="form-fields" style="display: none;">
+                            <label class="d-block mb-4">
+                                <span class="form-label d-block">Name</span>
+                                <input name="name" type="text" class="form-control" placeholder="Budi" required />
+                            </label>
+                            
+                            <label class="d-block mb-4" id="people-field" style="display: none;">
+                                <span class="form-label d-block">People</span>
+                                <input name="people" id="people" type="number" class="form-control" placeholder="1" required min="1" oninput="this.value = Math.max(1, this.value)" />
+                            </label>
+                            
+                            <label class="d-block mb-4">
+                                <span class="form-label d-block" id="message-label">Talent that will be presented</span>
+                                <textarea name="message" id="message" class="form-control" rows="3" placeholder=".."></textarea>
+                            </label>
+                        </div>
+                        
+                        <div class="mb-3 d-flex justify-content-center" id="submit-container" style="display: none;">
+                            <button type="submit" class="btn btn-primary px-3 rounded-3 align-items-center" id="submit-btn">Submit</button>
+                        </div>
+                
+                    
+                      </form>
+
+                      
+                    </div>
+                </div>                
+
+                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-10 text-center">
+                    <h2>
+                        Contact Information
+                    </h2>
+                    <p class="note">
+                        This Pre-Invitation is for Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dignissimos.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-5 col-10">
+                <div class="card text-center text-bg-light mb-4">
+                    <div class="card-header">
+                    Bang Den
+                    </div>
+                    <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>0808028282828</span>
+                    </div>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                    Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                </div>
+                <div class="card text-center text-bg-light mb-4">
+                    <div class="card-header">
+                    Indah
+                    </div>
+                    <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                        <i class="bi bi-whatsapp"></i>
+                        <span>08272727282</span>
+                    </div>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                    Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+
+
+        <!-- Logo Section -->
+        <section id="logo" class="logo">
+            <div class="nike"></div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <small class="block">
+                            &copy; 2025 Uzufy. All Rights Reserved.
+                        </small>
+                        <small class="block">
+                            Design by <a href="https://www.instagram.com/uzufy31/">@Uzufy.</a>.
+                        </small>
+
+
+                        <ul class="mt-3">
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="audio-container">
+            <audio id="song">
+                <source src="/song/Goblin.mp3" type="audio/mp3">
+            </audio>
+
+            <div class="audio-icon-wrapper" style="display: none;">
+                <i class="bi bi-pause-circle"></i>
+            </div>
+        </div>
 
 
 
+        <!-- SCRIPT AREA -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+        <!-- Lightbox B5-->
+        <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 
         <!-- Callback Countdown -->
         <script>
@@ -51,7 +556,7 @@
                 days: { root: 'day', lambda: (root, n) => n > 1 ? root + 's' : root },
                 hours: { root: 'hour', lambda: (root, n) => n > 1 ? root + 's' : root },
                 minutes: { root: 'minute', lambda: (root, n) => n > 1 ? root + 's' : root },
-                seconds: { root: 'second', lambda: (root, n) => n > 1 ? root + 's' : root }
+                seconds: { root: 'sec', lambda: (root, n) => n > 1 ? root + 's' : root }
             },
             plural: true,
             inline: false, 
@@ -71,5 +576,124 @@
             onUpdate: (params) => {}
         });
         </script>
+
+
+        <!-- Offcanvas Script Overflow -->
+        <script>
+            const stickyTop = document.querySelector('.sticky-top');
+            const offcanvas = document.querySelector('.offcanvas');
+
+            offcanvas.addEventListener('show.bs.offcanvas', function () {
+            stickyTop.style.overflow = 'visible';
+            });
+
+            offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+            stickyTop.style.overflow = 'hidden';
+            });
+
+        </script>
+
+
+        <!-- Scroll Disable-->
+        <script>
+            const rootElement = document.querySelector(':root');
+            const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+            let isPlaying = false;
+            const audioIcon = document.querySelector('.audio-icon-wrapper i');
+            const song = document.querySelector('#song');
+
+            function disableScroll() {
+                scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+                window.onscroll = function() {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+
+                
+                rootElement.style.scrollBehavior = 'auto';
+            }
+
+            function enableScroll() {
+                window.onscroll = function() {}
+                rootElement.style.scrollBehavior = 'smooth';
+                //localStorage.setItem('opened', 'true');
+                playAudio();
+                
+            }
+
+            function playAudio(){
+                song.volume = 0.8;
+                audioIconWrapper.style.display = 'flex';
+                song.play();
+                isPlaying = true;
+            }
+
+            audioIconWrapper.onclick = function(){
+                if(isPlaying){
+                    song.pause();
+                    audioIcon.classList.remove('bi-disc');
+                    audioIcon.classList.add('bi-pause-circle');
+                }
+                else{
+                    song.play();
+                    audioIcon.classList.add('bi-disc');
+                    audioIcon.classList.remove('bi-pause-circle');
+                    
+                }
+
+                isPlaying = !isPlaying;
+            }
+
+            //if(!localStorage.getItem('opened')) {
+              //  disableScroll();
+            //}
+            disableScroll();
+        </script>
+
+        <script>
+            window.addEventListener("load", function() {
+            const form = document.getElementById('my-form');
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                method: 'POST',
+                body: data,
+                })
+                .then(() => {
+                alert("Konfirmasi Kehadiran Berhasil!");
+                })
+            });
+            });
+        </script>
+
+
+        <!-- Script Form -->
+        <script>
+            document.getElementById("btn-present").addEventListener("click", function() {
+            document.getElementById("form-fields").style.display = "block";
+            document.getElementById("people-field").style.display = "block";
+            document.getElementById("people").value = "1";
+            document.getElementById("people").disabled = false;
+            document.getElementById("message-label").textContent = "Talent that will be presented";
+            document.getElementById("message").placeholder = "Describe your talent..";
+            document.getElementById("message-field").style.display = "block";
+            document.getElementById("submit-container").style.display = "flex";
+        });
+            
+            document.getElementById("btn-absent").addEventListener("click", function() {
+                document.getElementById("form-fields").style.display = "block";
+                document.getElementById("people-field").style.display = "none";
+                document.getElementById("people").value = "0";
+                document.getElementById("people").disabled = true;
+                document.getElementById("message-label").textContent = "Message";
+                document.getElementById("message").placeholder = "Leave a message..";
+                document.getElementById("message-field").style.display = "block";
+                document.getElementById("submit-container").style.display = "flex";
+            });
+        </script>
+
     </body>
 </html>
